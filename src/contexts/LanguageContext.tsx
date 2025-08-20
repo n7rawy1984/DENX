@@ -17,14 +17,14 @@ const translations = {
     'hero.warranty': '1 Year Warranty',
     'hero.freeShipping': 'Free Shipping',
     'hero.cashOnDelivery': 'Cash on Delivery',
-    'hero.orderNow': 'Order Now - 178 AED',
+    'hero.orderNow': 'Order Now - 210 AED',
     'hero.limitedOffer': 'Limited time offer • Fast delivery',
     'hero.reviews': '4.9/5 Reviews',
 
     // Product Section
     'product.title': 'DENX Car Battery Charger & Jump Starter',
     'product.subtitle': '4-in-1 Emergency Solution for Your Vehicle',
-    'product.price': '178 AED',
+    'product.price': '210 AED',
     'product.freeShippingIncluded': 'Free Shipping Included',
     'product.feature.charger.title': 'Car Battery Charger',
     'product.feature.charger.desc': 'Advanced charging technology for all battery types',
@@ -100,14 +100,14 @@ const translations = {
     'hero.warranty': 'ضمان سنة واحدة',
     'hero.freeShipping': 'شحن مجاني',
     'hero.cashOnDelivery': 'الدفع عند الاستلام',
-    'hero.orderNow': 'اطلب الآن - 178 درهم',
+    'hero.orderNow': 'اطلب الآن - 210 درهم',
     'hero.limitedOffer': 'عرض لفترة محدودة • توصيل سريع',
     'hero.reviews': '4.9/5 تقييمات',
 
     // Product Section
     'product.title': 'المنقذ DENX شاحن بطارية السيارة ومشغل الطوارئ',
     'product.subtitle': 'حل الطوارئ 4 في 1 لسيارتك',
-    'product.price': '178 درهم',
+    'product.price': '210 درهم',
     'product.freeShippingIncluded': 'شحن مجاني متضمن',
     'product.feature.charger.title': 'شاحن بطارية السيارة',
     'product.feature.charger.desc': 'تقنية شحن متقدمة لجميع أنواع البطاريات',
