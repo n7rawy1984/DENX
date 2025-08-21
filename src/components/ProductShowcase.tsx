@@ -39,7 +39,7 @@ export const ProductShowcase = () => {
 
   return (
     <Card className="w-full max-w-md bg-gradient-card border-border/50 shadow-xl">
-      <CardContent className="p-16 space-y-8">
+      <CardContent className="p-2 space-y-8">
         <div className="relative">
           <img
             src={denxDevice}
@@ -62,7 +62,7 @@ export const ProductShowcase = () => {
 
         <div className="grid grid-cols-2 gap-3">
           {features.map((feature, index) => (
-            <div key={index} className="flex items-start gap-2 p-3 bg-muted/50 rounded-lg">
+            <div key={index} className="flex items-start gap-6 p-3 bg-muted/50 rounded-lg">
               <div className="text-primary mt-0.5">
                 {feature.icon}
               </div>

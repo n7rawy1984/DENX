@@ -35,12 +35,12 @@ export const Hero = () => {
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
           {t('hero.title.never')}
-          <span className="block bg-gradient-to-r from-yellow-400 pb-4 to-green-400 bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-yellow-400 pb-4 pt-2 to-green-400 bg-clip-text text-transparent">
             {t('hero.title.stranded')}
           </span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl md:text-2xl text-white/100 mb-8 max-w-2xl mx-auto leading-relaxed">
           {t('hero.subtitle')}
         </p>
 
@@ -48,15 +48,15 @@ export const Hero = () => {
           <div className="flex flex-wrap justify-center gap-4 text-white/100">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full" />
-              <span className="text-bg">{t('hero.warranty')}</span>
+              <span className="text-lg">{t('hero.warranty')}</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full" />
-              <span className="text-bg">{t('hero.freeShipping')}</span>
+              <span className="text-lg">{t('hero.freeShipping')}</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full" />
-              <span className="text-bg">{t('hero.cashOnDelivery')}</span>
+              <span className="text-lg">{t('hero.cashOnDelivery')}</span>
             </div>
           </div>
         </div>

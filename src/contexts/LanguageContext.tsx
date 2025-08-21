@@ -164,7 +164,7 @@ const translations = {
 
     // Footer
     'footer.copyright': '© 2024 متجر DENX. جميع الحقوق محفوظة.',
-    'footer.features': 'طلب آمن • توصيل سريع • ضمان سنة واحدة',
+    'footer.features': 'طلب آمن • توصيل سريع • ضمان لمدة سنة كاملة',
 
     // Setup
     'setup.emailjs': 'إعداد EmailJS',
