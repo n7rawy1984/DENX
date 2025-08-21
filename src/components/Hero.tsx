@@ -18,8 +18,8 @@ export const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        <div className="absolute inset-0 bg-gradient-hero opacity-90" />
-        <div className="absolute inset-0 bg-background/10" />
+        <div className="absolute inset-0 bg-gradient-hero opacity-70" />
+        <div className="absolute inset-0 bg-background/18" />
       </div>
 
       {/* Content */}
@@ -33,9 +33,9 @@ export const Hero = () => {
           </div>
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-3xl font-bold text-white mb-6 leading-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
           {t('hero.title.never')}
-          <span className="block bg-gradient-to-r from-yellow-400 to-green-400 bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-r from-yellow-400 pb-4 to-green-400 bg-clip-text text-transparent">
             {t('hero.title.stranded')}
           </span>
         </h1>

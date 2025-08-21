@@ -37,7 +37,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Language Toggle & Setup Buttons */}
-      <div className="fixed top-4 right-4 z-50 flex gap-2">
+      <div className="fixed top-4 right-4 z-50 flex gap-2 transform-none">
         <LanguageToggle />
         {/* <Button
           variant="secondary"

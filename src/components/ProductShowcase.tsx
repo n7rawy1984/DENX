@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, Zap, Battery, Flashlight, Shield } from "lucide-react";
+import { Check, Zap, Battery, Flashlight, Shield, Wind } from "lucide-react";
+
 import denxDevice from "@/assets/denx-device.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -27,12 +28,18 @@ export const ProductShowcase = () => {
       icon: <Shield className="w-5 h-5" />,
       title: t('product.feature.powerbank.title'),
       description: t('product.feature.powerbank.desc')
-    }
+    },
+{
+  icon: <Wind className="w-5 h-5" />,
+  title: t('product.feature.airpump.title'),
+  description: t('product.feature.airpump.desc')
+}
+
   ];
 
   return (
     <Card className="w-full max-w-md bg-gradient-card border-border/50 shadow-xl">
-      <CardContent className="p-6 space-y-6">
+      <CardContent className="p-16 space-y-8">
         <div className="relative">
           <img
             src={denxDevice}
