@@ -77,7 +77,7 @@ const translations = {
     'main.subtitle': 'Fill out the form below and we\'ll contact you to confirm your order. Fast delivery and cash on delivery available.',
 
     // Footer
-    'footer.copyright': '© 2024 DENX Store. All rights reserved.',
+    'footer.copyright': '© 2025 DENX Store. All rights reserved.',
     'footer.features': 'Secure ordering • Fast delivery • 1 Year warranty',
 
     // Setup
@@ -163,7 +163,7 @@ const translations = {
     'main.subtitle': 'املأ النموذج أدناه وسنتواصل معك لتأكيد طلبك. توصيل سريع والدفع عند الاستلام متاح.',
 
     // Footer
-    'footer.copyright': '© 2024 متجر DENX. جميع الحقوق محفوظة.',
+    'footer.copyright': '© 2025 متجر DENX. جميع الحقوق محفوظة.',
     'footer.features': 'طلب آمن • توصيل سريع • ضمان لمدة سنة كاملة',
 
     // Setup
@@ -186,7 +186,7 @@ const translations = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('ar');
 
   const t = (key: string): string => {
     return translations[language][key] || key;
