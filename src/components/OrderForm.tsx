@@ -30,7 +30,6 @@ export const OrderForm = () => {
 
   const orderSchema = z.object({
     name: z.string().min(2, t("validation.name.min")),
-    email: z.string().email(t("validation.email.invalid")),
     phone: z.string().min(10, t("validation.phone.min")),
     address: z.string().min(5, t("validation.address.min")),
     city: z.string().min(2, t("validation.city.required")),
@@ -74,7 +73,6 @@ export const OrderForm = () => {
       const templateParams = {
         to_email: TO_EMAIL,
         customer_name: data.name,
-        customer_email: data.email,
         customer_phone: data.phone,
         customer_address: data.address,
         customer_city: data.city, // value ثابتة (abudhabi/dubai…)
@@ -123,7 +121,6 @@ export const OrderForm = () => {
             <Input
               id="name"
               {...register("name")}
-              placeholder={t("order.fullName.placeholder")}
               className={errors.name ? "border-destructive" : ""}
             />
             {errors.name && (
@@ -131,22 +128,7 @@ export const OrderForm = () => {
             )}
           </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="email" className="flex items-center gap-2">
-              <Mail className="w-4 h-4" />
-              {t("order.email")}
-            </Label>
-            <Input
-              id="email"
-              type="email"
-              {...register("email")}
-              placeholder={t("order.email.placeholder")}
-              className={errors.email ? "border-destructive" : ""}
-            />
-            {errors.email && (
-              <p className="text-sm text-destructive">{errors.email.message}</p>
-            )}
-          </div>
+       
 
           <div className="space-y-2">
             <Label htmlFor="phone" className="flex items-center gap-2">
@@ -157,7 +139,6 @@ export const OrderForm = () => {
               id="phone"
               type="tel"
               {...register("phone")}
-              placeholder={t("order.phone.placeholder")}
               className={errors.phone ? "border-destructive" : ""}
             />
             {errors.phone && (
@@ -198,7 +179,6 @@ export const OrderForm = () => {
             <Textarea
               id="address"
               {...register("address")}
-              placeholder={t("order.address.placeholder")}
               className={errors.address ? "border-destructive" : ""}
               rows={3}
             />
@@ -212,7 +192,6 @@ export const OrderForm = () => {
             <Textarea
               id="notes"
               {...register("notes")}
-              placeholder={t("order.notes.placeholder")}
               rows={2}
             />
           </div>

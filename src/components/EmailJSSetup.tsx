@@ -61,7 +61,6 @@ export const EmailJSSetup = () => {
                 </p>
                 <div className="bg-muted p-3 rounded-lg font-mono text-sm">
                   <div>Customer Name: {`{{customer_name}}`}</div>
-                  <div>Email: {`{{customer_email}}`}</div>
                   <div>Phone: {`{{customer_phone}}`}</div>
                   <div>Address: {`{{customer_address}}`}</div>
                   <div>City: {`{{customer_city}}`}</div>
