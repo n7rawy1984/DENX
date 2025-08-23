@@ -1,3 +1,4 @@
+// declare const fbq: any;
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -85,6 +86,10 @@ export const OrderForm = () => {
 
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
 
+      // --- هذا هو المكان الصحيح والمثالي لكود البيكسل ---
+      window.fbq('track', 'Purchase', {value: 0.00, currency: 'AED'});
+      // ----------------------------------------------------
+
       toast({
         title: t("order.success.title"),
         description: t("order.success.desc"),
@@ -103,7 +108,6 @@ export const OrderForm = () => {
       setIsSubmitting(false);
     }
   };
-
   return (
     <Card className="w-full max-w-md bg-gradient-card border-border/50 shadow-xl">
       <CardHeader className="pb-4">
